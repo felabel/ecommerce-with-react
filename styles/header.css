@@ -1,0 +1,163 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, sans-serif;
+  /* line-height: 1.6; */
+  font-size: 18px;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header{
+    background-color: #0c002b;
+    width: 100%;
+    height: 70px;
+    margin: 0 ;
+    padding: 1rem 3rem;
+    color: white;
+}
+#logo{
+    text-decoration: none;
+    color: #ff718e;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: -15px;
+}
+#elogo{
+    color: white;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.header-right{
+    float: right;
+    margin-top: 5px;
+    display: block;
+}
+.header-right a {
+    font-size: 0.9rem;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+.header-right a:hover{
+    color: #ff718e;
+}
+.shop-now{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    padding:5px 30px;
+    background-color: rgb(219, 98, 118);
+    
+}
+.search{
+    position: absolute;
+    right:50%;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    top: 15px;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+.search::placeholder{
+    font-size: 1rem;
+}
+.menu-icon{
+    display: none;
+}
+.menu-cancel{
+    display: none;
+}
+
+/* responsive header */
+@media screen and (max-width:800px){
+    .search{
+        display: none;
+
+    }
+    .header-right{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    .menu-cancel{
+        display: none;
+        float: right;
+        cursor: pointer;
+    }
+
+}
+@media screen and (max-width:1000px){
+    .search{
+        display: none;
+
+    }
+    .header-right{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    .menu-cancel{
+        display: none;
+        float: right;
+        cursor: pointer;
+    }
+
+}
+.mobile-menu{
+    width: 100%;
+    height: 242px;
+    display: none;
+    background-color: grey;
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    align-items: left;
+    background-color: #0c002b;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* align-self: ; */
+}
+.search-res{
+    width: 100%;
+    height: 40px;
+    /* position: absolute; */
+    border-radius: 5px;
+    /* top: 15px; */
+    padding: 0 10px;
+    font-size: 1rem;
+}
+.mobile-menu a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    padding: 12px;
+    text-decoration: none;
+    position: relative;
+    margin-right: 50px;
+    color: white;
+    
+}.mobile-menu a:hover{
+    color: grey;
+}
+.shop-now-res{
+
+}
+
